@@ -1,0 +1,36 @@
+header{
+    background: rgb(200, 177, 140);
+}
+
+header{
+   display: flex;
+    justify-content: space-between;
+
+}
+
+h1{
+    display: inline-block;
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+span:first-of-type{
+    margin: 0.5em 0 0 0.5em;
+}
+
+.cart{
+    border: 1px solid rgb(41, 73, 64);
+    border-radius: 5px;
+    margin: 2em;
+    padding: 1em;
+    display: flex;
+   align-items: center;
+    height: 0.2em;
+    font-size: 1.3em;
+
+}
+
+#cartTotal{
+    color: rgb(41, 73, 64);
+    margin-top: 0;
+}

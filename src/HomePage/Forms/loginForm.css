@@ -1,0 +1,28 @@
+.loginForm{
+    border: 1px solid black;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 2em;
+}
+
+.loginForm label input{
+    width: 20em;
+    height: 2em;
+}
+
+.loginForm h1{
+    font-size: 1.5em;
+    border-bottom: 1px dashed black;
+}
+
+.loginForm input[type="submit"]{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background: #455859;
+    color: white;
+    font-size:18px;
+}
