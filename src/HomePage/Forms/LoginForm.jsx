@@ -7,7 +7,7 @@ class LoginForm extends Component{
 
         this.state ={
             username: null,
-            password: null
+            password: null,
         }
         this.handleChange = this.handleChange.bind(this);
 
@@ -17,7 +17,10 @@ class LoginForm extends Component{
         this.setState({[event.target.name]: event.target.value})
     }
 
+
     render() {
+
+
         return(
             <div className= "loginForm">
                 <h1>Login</h1>

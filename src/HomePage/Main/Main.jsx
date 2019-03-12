@@ -19,7 +19,7 @@ class Main extends Component{
 
                     <div className="info">
                         <p>Author: Test Author</p>
-                        <p>Music style: Test music style</p>
+                        <p>Description: Test music style</p>
                         <p>Price: 1.00 lv</p>
                         <ButtonBuy/>
                     </div>

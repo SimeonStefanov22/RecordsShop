@@ -72,11 +72,48 @@ class App extends Component {
                       user: body.user,
                       message: body.message
                   })
+                  console.log("Login!");
               }
           })
 
   }
 
+  createRecord(data) {
+        console.log(data);
+        fetch('http://localhost:9999/feed/record/create',{
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        }).then(response => response.json())
+            .then(body => {
+                if(body.errors){
+                    body.errors.forEach(error =>{
+                        console.log(error)
+                    })
+                }else{
+                    //Record added successfully
+                    this.fetchRecords();
+
+                }
+            })
+    }
+
+  fetchRecords() {
+      fetch("http://localhost:9999/feed/records")
+          .then(rowData => rowData.json())
+          .then(body => {
+              this.setState({records: body.records})
+          })
+  }
+
+  showMessage() {
+
+      setTimeout(function () {
+          localStorage.getItem("message")
+      }, 3000)
+  }
   render() {
     return(
 
@@ -86,21 +123,21 @@ class App extends Component {
 
             <Route
                 path="/login"
-                exact component={LoginForm}
-                loginUser={this.loginUser.bind(this)}
-                user={this.state.user}
+                exact component={()=> <LoginForm loginUser={this.loginUser.bind(this)} user={this.state.user}/> }
             />
 
             <Route
                 path="/registration"
-                exact component={RegistrationForm}
-                registerUser={this.registerUser.bind(this)}
-                user={this.state.user}
+                exact component={()=> <RegistrationForm registerUser={this.registerUser.bind(this)} user={this.state.user}/>}
             />
 
 
+            <Route
+            path="/admin"
+            exact component= {()=> <CreateRecord createRecord={this.createRecord.bind(this)}/>}
+            />
 
-            <CreateRecord/>
+
             <Main/>
             <Footer/>
 

@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const gameSchema = new Schema({
-  title: {
+const recordSchema = new Schema({
+  author: {
     type: String,
     required: true
   },
@@ -13,7 +13,11 @@ const gameSchema = new Schema({
   imageUrl: {
     type: String,
     required: true
+  },
+  price: {
+    type: Number,
+    required: true
   }
 });
 
-module.exports = mongoose.model('Game', gameSchema);
+module.exports = mongoose.model('Record', gameSchema);

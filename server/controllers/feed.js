@@ -1,12 +1,12 @@
-const Game = require('../models/Game');
+const Record = require('../models/Record');
 
 module.exports = {
-  getGames: (req, res) => {
-    Game.find()
-      .then((games) => {
+  getRecords: (req, res) => {
+    Record.find()
+      .then((records) => {
         res
           .status(200)
-          .json({ message: 'Fetched games successfully.', games });
+          .json({ message: 'Fetched records successfully.', records });
       })
       .catch((error) => {
         if (!error.statusCode) {
@@ -15,14 +15,14 @@ module.exports = {
         next(error);
       });
   },
-  createGame: (req, res) => {
-    const gameObj = req.body;
-    Game.create(gameObj)
-    .then((game) => {
+  createRecord: (req, res) => {
+    const recordObj = req.body;
+    Record.create(recordObj)
+    .then((record) => {
       res.status(200)
         .json({
-          message: 'Game created successfully!',
-          game
+          message: 'Record created successfully!',
+          record
         })
     })
     .catch((error) => {
@@ -32,15 +32,15 @@ module.exports = {
       next(error);
     });
   },
-  getGamesByCategory: (req, res) => {
+  getRecordsByCategory: (req, res) => {
     const category = req.params.category;
-    Game.find({categories: {
+    Record.find({categories: {
       $all: [category]
     }})
-      .then((games) => {
+      .then((records) => {
         res
           .status(200)
-          .json({ message: `${category} games fetched.`, games })
+          .json({ message: `${category} records fetched.`, records })
       })
       .catch((error) => {
         if (!error.statusCode) {

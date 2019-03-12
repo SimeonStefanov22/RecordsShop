@@ -9,7 +9,7 @@ class RegistrationForm extends Component{
             username: null,
             email: null,
             password: null,
-            repeatPassword: null
+
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
