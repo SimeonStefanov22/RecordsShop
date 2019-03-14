@@ -74,6 +74,7 @@ class App extends Component {
                   })
                   console.log("Login!");
                   this.fetchRecords();
+
               }
           })
 
@@ -106,7 +107,7 @@ class App extends Component {
           .then(rowData => rowData.json())
           .then(body => {
               this.setState({games: body.games})
-              //console.log(body)
+              console.log(body.games)
           })
 
   }

@@ -14,10 +14,7 @@ const recordSchema = new Schema({
     type: String,
     required: true
   },
-  price: {
-    type: String,
-    required: true
-  }
+
 });
 
-module.exports = mongoose.model('Record', gameSchema);
+module.exports = mongoose.model('Record', recordSchema);

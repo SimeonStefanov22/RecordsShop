@@ -12,28 +12,32 @@ class Main extends Component{
 
 
 
-    createRecordInMain = () =>{
+    createRecordInMain = () => {
         let recordsArr = this.props.games;
-        for(let obj of recordsArr) {
-        return(
-            <div className="imageVinil">
-                <div className="image">
-                    <img src={obj.imageUrl}></img>
+
+        for (let obj of recordsArr) {
+
+
+            return (
+                <div className="imageVinil">
+                    <div className="image">
+                        <img src={obj.imageUrl}></img>
+
+                    </div>
+
+                    <div className="info">
+                        <p>{obj.title}</p>
+                        <p>{obj.description}</p>
+                        <p>Price: 1.00 lv</p>
+                        <ButtonBuy/>
+                    </div>
 
                 </div>
-
-                <div className="info">
-                    <p>Author: Test Author</p>
-                    <p>Description: Test music style</p>
-                    <p>Price: 1.00 lv</p>
-                    <ButtonBuy/>
-                </div>
-
-            </div>
-        )
+            )
 
         }
     }
+
 
     render() {
 
@@ -43,6 +47,7 @@ class Main extends Component{
 
             <div className="main">
                 {this.createRecordInMain()}
+
             </div>
 
 
