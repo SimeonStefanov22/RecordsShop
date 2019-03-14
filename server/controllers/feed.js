@@ -3,10 +3,10 @@ const Record = require('../models/Record');
 module.exports = {
   getRecords: (req, res) => {
     Record.find()
-      .then((records) => {
+      .then((games) => {
         res
           .status(200)
-          .json({ message: 'Fetched records successfully.', records });
+          .json({ message: 'Fetched records successfully.', games });
       })
       .catch((error) => {
         if (!error.statusCode) {
@@ -18,11 +18,11 @@ module.exports = {
   createRecord: (req, res) => {
     const recordObj = req.body;
     Record.create(recordObj)
-    .then((record) => {
+    .then((game) => {
       res.status(200)
         .json({
           message: 'Record created successfully!',
-          record
+          game
         })
     })
     .catch((error) => {
@@ -37,10 +37,10 @@ module.exports = {
     Record.find({categories: {
       $all: [category]
     }})
-      .then((records) => {
+      .then((games) => {
         res
           .status(200)
-          .json({ message: `${category} records fetched.`, records })
+          .json({ message: `${category} records fetched.`, games })
       })
       .catch((error) => {
         if (!error.statusCode) {

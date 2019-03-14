@@ -6,7 +6,7 @@ class CreateRecord extends Component{
         super(props)
 
         this.state = {
-            author: null,
+            title: null,
             description: null,
             imageUrl: null,
             price: null
@@ -27,7 +27,7 @@ class CreateRecord extends Component{
                     this.props.createRecord(this.state);
 
                 }}>
-                    <label>Author</label>
+                    <label>Title</label>
                     <br/>
                     <input type="text" onChange={this.handleChange} name="title" id="title"/>
                     <br/>

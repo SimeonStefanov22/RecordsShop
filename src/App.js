@@ -16,7 +16,7 @@ class App extends Component {
 
     this.state = {
         user: null,
-        records: [],
+        games: [],
         hasFetched: false,
         loginForm: false,
         message: ""
@@ -73,6 +73,7 @@ class App extends Component {
                       message: body.message
                   })
                   console.log("Login!");
+                  this.fetchRecords();
               }
           })
 
@@ -80,7 +81,7 @@ class App extends Component {
 
   createRecord(data) {
         console.log(data);
-        fetch('http://localhost:9999/feed/record/create',{
+        fetch('http://localhost:9999/feed/game/create',{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -101,11 +102,13 @@ class App extends Component {
     }
 
   fetchRecords() {
-      fetch("http://localhost:9999/feed/records")
+      fetch("http://localhost:9999/feed/games")
           .then(rowData => rowData.json())
           .then(body => {
-              this.setState({records: body.records})
+              this.setState({games: body.games})
+              //console.log(body)
           })
+
   }
 
   showMessage() {
@@ -138,7 +141,7 @@ class App extends Component {
             />
 
 
-            <Main/>
+            <Main games={this.state.games}/>
             <Footer/>
 
 

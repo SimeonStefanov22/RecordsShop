@@ -15,7 +15,7 @@ const recordSchema = new Schema({
     required: true
   },
   price: {
-    type: Number,
+    type: String,
     required: true
   }
 });
