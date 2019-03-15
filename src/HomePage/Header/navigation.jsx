@@ -7,12 +7,17 @@ class Navigation extends Component{
         super(props)
     }
 
+    logoutUser =()=>{
+        localStorage.clear();
+    }
+
     render() {
         return(
             <nav>
                 <ul>
                     <li><Link to="/login">Login</Link></li>
                     <li><Link to="/registration">Register</Link></li>
+                    <li><Link to="/logout" onClick={this.logoutUser}>Logout</Link></li>
 
                 </ul>
             </nav>

@@ -9,6 +9,11 @@
     display: inline-block;
 }
 
+.image img{
+    height: 220px;
+    width: 220px;
+}
+
 .info{
     padding: 1em;
     background: white;

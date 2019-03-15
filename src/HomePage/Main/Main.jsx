@@ -5,8 +5,6 @@ import ButtonBuy from './ButtonBuy';
 class Main extends Component{
     constructor(props){
         super(props)
-
-
     }
 
 
@@ -15,11 +13,9 @@ class Main extends Component{
     createRecordInMain = () => {
         let recordsArr = this.props.games;
 
-        for (let obj of recordsArr) {
-
-
+        let records =  recordsArr.map(obj => {
             return (
-                <div className="imageVinil">
+                <div key={obj._id} className="imageVinil">
                     <div className="image">
                         <img src={obj.imageUrl}></img>
 
@@ -28,19 +24,18 @@ class Main extends Component{
                     <div className="info">
                         <p>{obj.title}</p>
                         <p>{obj.description}</p>
-                        <p>Price: 1.00 lv</p>
+                        <p>Price: ${obj.price}</p>
                         <ButtonBuy/>
                     </div>
 
                 </div>
-            )
-
-        }
+            )});
+        return records;
     }
 
 
     render() {
-
+        console.log(this.props.games);
 
         return(
 
@@ -51,7 +46,7 @@ class Main extends Component{
             </div>
 
 
-    )
+        )
     }
 
 }

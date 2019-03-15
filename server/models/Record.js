@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const recordSchema = new Schema({
-  author: {
+  title: {
     type: String,
     required: true
   },
@@ -14,6 +14,10 @@ const recordSchema = new Schema({
     type: String,
     required: true
   },
+  price: {
+    type: String,
+    required: true
+  }
 
 });
 

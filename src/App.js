@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from 'react';
-import {Route} from "react-router-dom";
+import {Route, Switch} from "react-router-dom";
 import Header from './HomePage/Header/Header';
 import Navigation from './HomePage/Header/navigation'
 import Main from "./HomePage/Main/Main";
@@ -73,7 +73,8 @@ class App extends Component {
                       message: body.message
                   })
                   console.log("Login!");
-                  this.fetchRecords();
+
+
 
               }
           })
@@ -96,21 +97,25 @@ class App extends Component {
                     })
                 }else{
                     //Record added successfully
-                    this.fetchRecords();
+                    //this.fetchRecords();
 
                 }
             })
     }
 
-  fetchRecords() {
+
+
+    fetchRecords () {
       fetch("http://localhost:9999/feed/games")
           .then(rowData => rowData.json())
           .then(body => {
               this.setState({games: body.games})
-              console.log(body.games)
+              console.log(body)
           })
 
   }
+  
+
 
   showMessage() {
 
@@ -119,11 +124,16 @@ class App extends Component {
       }, 3000)
   }
   render() {
+      
     return(
 
+
         <Fragment>
+
             <Header/>
             <Navigation/>
+
+            <Route path="/" component={()=> <Main games={this.state.games} />}/>
 
             <Route
                 path="/login"
@@ -142,16 +152,11 @@ class App extends Component {
             />
 
 
-            <Main games={this.state.games}/>
             <Footer/>
 
+           </Fragment>
 
-
-        </Fragment>
-
-
-
-        );
+    );
   }
 }
 
