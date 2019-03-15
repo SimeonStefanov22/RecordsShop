@@ -10,6 +10,9 @@ class Main extends Component{
 
 
 
+
+
+
     createRecordInMain = () => {
         let recordsArr = this.props.games;
 

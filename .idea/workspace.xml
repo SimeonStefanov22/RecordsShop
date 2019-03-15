@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79a58df4-fc07-4a68-8562-9c7f5a19da0f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/feed.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/feed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/Record.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/Record.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomePage/Header/navigation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePage/Header/navigation.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomePage/Forms/loginForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePage/Forms/loginForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomePage/Header/navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePage/Header/navigation.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HomePage/Main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePage/Main/Main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomePage/Main/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePage/Main/main.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
+            <state relative-caret-position="68">
+              <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -34,9 +31,32 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/HomePage/Forms/LoginForm.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="32" column="95" selection-start-line="32" selection-start-column="95" selection-end-line="32" selection-end-column="95" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HomePage/Header/navigation.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="170">
               <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -48,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HomePage/Main/Main.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
-              <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+            <state relative-caret-position="-483">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -81,11 +101,13 @@
         <option value="$PROJECT_DIR$/server/routes/feed.js" />
         <option value="$PROJECT_DIR$/src/HomePage/Forms/CreateRecord.jsx" />
         <option value="$PROJECT_DIR$/src/HomePage/Forms/LoginForm.jsx" />
-        <option value="$PROJECT_DIR$/src/HomePage/Main/Main.jsx" />
         <option value="$PROJECT_DIR$/server/models/Record.js" />
         <option value="$PROJECT_DIR$/server/controllers/feed.js" />
         <option value="$PROJECT_DIR$/src/HomePage/Main/main.css" />
         <option value="$PROJECT_DIR$/src/HomePage/Header/navigation.jsx" />
+        <option value="$PROJECT_DIR$/src/HomePage/Main/Main.jsx" />
+        <option value="$PROJECT_DIR$/src/HomePage/Header/navigation.css" />
+        <option value="$PROJECT_DIR$/src/HomePage/Forms/loginForm.css" />
         <option value="$PROJECT_DIR$/src/App.js" />
       </list>
     </option>
@@ -184,12 +206,12 @@
       <workItem from="1552304123820" duration="30625000" />
       <workItem from="1552543238528" duration="13458000" />
       <workItem from="1552585332056" duration="11374000" />
-      <workItem from="1552645861780" duration="2060000" />
+      <workItem from="1552645861780" duration="12561000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66202000" />
+    <option name="totallyTimeSpent" value="76703000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -222,15 +244,6 @@
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/HomePage/Forms/RegistrationForm.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -243,13 +256,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HomePage/DynamicHomePage.jsx" />
     <entry file="file://$PROJECT_DIR$/src/HomePage/Content.jsx" />
-    <entry file="file://$PROJECT_DIR$/src/HomePage/Forms/loginForm.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="21" lean-forward="true" selection-end-line="27" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/HomePage/Forms/createRecord.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -358,10 +364,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HomePage/Header/navigation.jsx">
+    <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HomePage/Main/Main.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-483">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -370,7 +385,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HomePage/Forms/LoginForm.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
+        <state relative-caret-position="289">
           <caret line="32" column="95" selection-start-line="32" selection-start-column="95" selection-end-line="32" selection-end-column="95" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
@@ -378,20 +393,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HomePage/Main/Main.jsx">
+    <entry file="file://$PROJECT_DIR$/src/HomePage/Header/navigation.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+        <state relative-caret-position="340">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HomePage/Header/navigation.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/HomePage/Forms/loginForm.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
+        <state relative-caret-position="68">
+          <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>

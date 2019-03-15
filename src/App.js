@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from 'react';
-import {Route, Switch} from "react-router-dom";
+import {Route, Switch, Router,Redirect} from "react-router-dom";
 import Header from './HomePage/Header/Header';
 import Navigation from './HomePage/Header/navigation'
 import Main from "./HomePage/Main/Main";
@@ -19,7 +19,8 @@ class App extends Component {
         games: [],
         hasFetched: false,
         loginForm: false,
-        message: ""
+        message: "",
+        userLoged: false
       }
 
 
@@ -45,7 +46,8 @@ class App extends Component {
 
                   this.setState({
                       user: body.username,
-                      message: body.message
+                      message: body.message,
+                      userLoged: true
                   })
               }
           })
@@ -70,10 +72,11 @@ class App extends Component {
 
                   this.setState({
                       user: body.user,
-                      message: body.message
+                      message: body.message,
+                      userLoged : true
                   })
                   console.log("Login!");
-
+                  //window.location.href = "/"
 
 
               }
@@ -105,7 +108,7 @@ class App extends Component {
 
 
 
-    fetchRecords () {
+fetchRecords () {
       fetch("http://localhost:9999/feed/games")
           .then(rowData => rowData.json())
           .then(body => {
@@ -114,49 +117,72 @@ class App extends Component {
           })
 
   }
-  
+
+componentDidMount() {
+      this.fetchRecords();
+}
 
 
-  showMessage() {
+    showMessage() {
 
       setTimeout(function () {
           localStorage.getItem("message")
       }, 3000)
   }
   render() {
+
       
     return(
 
 
-        <Fragment>
+        <div>
 
             <Header/>
             <Navigation/>
 
-            <Route path="/" component={()=> <Main games={this.state.games} />}/>
+            <Switch>
 
-            <Route
+
+                <Route
                 path="/login"
-                exact component={()=> <LoginForm loginUser={this.loginUser.bind(this)} user={this.state.user}/> }
-            />
+                component={()=> this.state.userLoged ===false
+                    ?
+                    <LoginForm loginUser={this.loginUser.bind(this)} user={this.state.user}/>
+                    :
+                    <Main games={this.state.games} /> }
+                />
+
+
 
             <Route
                 path="/registration"
-                exact component={()=> <RegistrationForm registerUser={this.registerUser.bind(this)} user={this.state.user}/>}
+                component={()=>  this.state.userLoged ===false
+                    ?
+                    <RegistrationForm registerUser={this.registerUser.bind(this)} user={this.state.user}/>
+                :
+                    <Main games={this.state.games} />
+                }
             />
-
 
             <Route
             path="/admin"
             exact component= {()=> <CreateRecord createRecord={this.createRecord.bind(this)}/>}
             />
 
+            <Route path="/" component={()=> <Main games={this.state.games} />}/>
+            </Switch>
 
-            <Footer/>
+                <Footer/>
 
-           </Fragment>
+
+        </div>
+
+
+
 
     );
+
+
   }
 }
 
