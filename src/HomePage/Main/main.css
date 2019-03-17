@@ -16,10 +16,13 @@
 
 .info{
     padding: 1em;
-    background: white;
+    background: rgb(200, 177, 140);
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+}
 
+p{
+    font-weight: 600;
 }
 
 

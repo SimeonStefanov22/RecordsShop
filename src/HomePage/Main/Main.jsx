@@ -1,19 +1,22 @@
 import React, {Component} from 'react';
 import './main.css';
 import ButtonBuy from './ButtonBuy';
+import ButtonDelete from './ButtonDel';
+import {Route} from "react-router-dom";
+
 
 class Main extends Component{
     constructor(props){
         super(props)
+
+
+
     }
 
 
-
-
-
-
-
     createRecordInMain = () => {
+
+
         let recordsArr = this.props.games;
 
         let records =  recordsArr.map(obj => {
@@ -31,6 +34,16 @@ class Main extends Component{
                         <ButtonBuy/>
                     </div>
 
+                    <Route
+                    path="/login"
+                    component={()=> this.props.stateAdmin === true
+                        ?
+                        <ButtonDelete dataId={obj._id} onClick={this.props.vinilClick}/>
+                        :
+                        null
+                    }
+                    />
+
                 </div>
             )});
         return records;
@@ -38,15 +51,14 @@ class Main extends Component{
 
 
     render() {
-        console.log(this.props.games);
+        //console.log(this.props.games);
 
         return(
 
 
-            <div className="main">
-                {this.createRecordInMain()}
-
-            </div>
+                <div className="main">
+                    {this.createRecordInMain()}
+                </div>
 
 
         )

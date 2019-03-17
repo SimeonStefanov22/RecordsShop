@@ -5,10 +5,8 @@ import {Link} from "react-router-dom";
 class Navigation extends Component{
     constructor(props){
         super(props)
-    }
 
-    logoutUser =()=>{
-        localStorage.clear();
+
     }
 
     render() {
@@ -17,7 +15,7 @@ class Navigation extends Component{
                 <ul>
                     <li><Link to="/login">Login</Link></li>
                     <li><Link to="/registration">Register</Link></li>
-                    <li><Link to="/logout" onClick={this.logoutUser}>Logout</Link></li>
+                    <li><Link to="/logout" onClick={this.props.logout}>Logout</Link></li>
 
                 </ul>
             </nav>

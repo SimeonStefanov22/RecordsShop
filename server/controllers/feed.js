@@ -35,21 +35,27 @@ module.exports = {
                 next(error);
             });
     },
-    getRecordsByCategory: (req, res, next) => {
-        const category = req.params.category;
-        Record.find({categories: {
-                $all: [category]
-            }})
-            .then((games) => {
-                res
-                    .status(200)
-                    .json({ message: `${category} records fetched.`, games })
+
+    deleteRecord: (req, res, next) => {
+        const id = req.params.id;
+        console.log(id);
+        Record.findById(id)
+            .then((record) => {
+                record
+                    .remove()
+                    .then(() => {
+                        return res.status(200).json({
+                            success: true,
+                            message: 'Record deleted successfully!'
+                        })
+                    })
             })
-            .catch((error) => {
-                if (!error.statusCode) {
-                    error.statusCode = 500;
-                }
-                next(error);
-            });
+            .catch(() => {
+                return res.status(200).json({
+                    success: false,
+                    message: 'Entry does not exist!'
+                })
+            })
+
     }
 }

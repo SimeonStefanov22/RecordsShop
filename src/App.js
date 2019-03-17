@@ -4,10 +4,10 @@ import Header from './HomePage/Header/Header';
 import Navigation from './HomePage/Header/navigation'
 import Main from "./HomePage/Main/Main";
 import Footer from './HomePage/Footer/Footer';
-import RegistrationForm from './HomePage/Forms/RegistrationForm';
-import LoginForm from "./HomePage/Forms/LoginForm";
-import CreateRecord from "./HomePage/Forms/CreateRecord";
-
+import RegistrationForm from './Forms/RegistrationForm';
+import LoginForm from "./Forms/LoginForm";
+import CreateRecord from "./AdminForms/CreateRecord";
+import AdminNavigation from "./AfdminNavigation/AdminNavigation";
 
 
 class App extends Component {
@@ -20,9 +20,11 @@ class App extends Component {
         hasFetched: false,
         loginForm: false,
         message: "",
-        userLoged: false
-      }
+        userLoged: false,
+        admin: false,
+        selectedVinil: null
 
+      }
 
   }
 
@@ -43,6 +45,7 @@ class App extends Component {
               }else{
                   localStorage.setItem('userId', body.userId)
                   localStorage.setItem('username', body.username)
+                  localStorage.setItem('message', body.message)
 
                   this.setState({
                       user: body.username,
@@ -69,6 +72,7 @@ class App extends Component {
               }else{
                   localStorage.setItem('userId', body.userId );
                   localStorage.setItem('username', body.username);
+                  localStorage.setItem('message', body.message);
 
                   this.setState({
                       user: body.user,
@@ -76,17 +80,26 @@ class App extends Component {
                       userLoged : true
                   })
                   console.log("Login!");
-                  //window.location.href = "/"
+                 console.log(body)
+                  this.authenticateUser()
 
 
               }
           })
 
+
   }
 
+    logoutUser () {
+        localStorage.clear();
+        this.setState({
+           userLoged: false
+       })
+    }
+
   createRecord(data) {
-        console.log(data);
-        fetch('http://localhost:9999/feed/game/create',{
+      //console.log(data);
+      fetch('http://localhost:9999/feed/game/create',{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -100,7 +113,8 @@ class App extends Component {
                     })
                 }else{
                     //Record added successfully
-                    //this.fetchRecords();
+                    this.fetchRecords();
+
 
                 }
             })
@@ -113,75 +127,125 @@ fetchRecords () {
           .then(rowData => rowData.json())
           .then(body => {
               this.setState({games: body.games})
-              console.log(body)
+
           })
 
   }
 
+
 componentDidMount() {
       this.fetchRecords();
-}
 
+      this.setState({
+        message: localStorage.getItem('message')
+    })
 
-    showMessage() {
-
-      setTimeout(function () {
-          localStorage.getItem("message")
-      }, 3000)
   }
+
+  authenticateUser (){
+
+      let userId = localStorage.getItem("userId");
+      if(userId === "5c8c0be3db4c1e2264fe894e"){
+          this.setState({
+              admin: true
+          })
+          //console.log(this.state.admin);
+      }
+  }
+
+    vinilDelete () {
+
+      //this.setState({
+            //    selectedVinil: event.currentTarget.dataset.id
+            //})
+        console.log("Deleted!!!")
+
+        fetch('http://localhost:9999/feed/games/delete/'  ,{
+            method: "DELETE",
+            headers: {
+                'Content-Type': 'application/json'
+            }
+
+        }).then(response => {
+            console.log(response)
+
+        })
+
+   }
+
+
+
+
   render() {
 
-      
-    return(
 
+      return(
 
         <div>
 
-            <Header/>
-            <Navigation/>
+            <Header />
+            <Navigation logout={this.logoutUser.bind(this)}/>
 
-            <Switch>
+            <Route
+                 path="/login"
+                exact component= {()=> this.state.admin === true
+                    ?
+                    <AdminNavigation/>
+                    :
+                    null
+                }
+            />
+
+            <Route
+                exact path="/admin/create"
+                component={()=> <CreateRecord createRecord={this.createRecord.bind(this)} />}
+            />
 
 
-                <Route
+
+            <Route
                 path="/login"
                 component={()=> this.state.userLoged ===false
                     ?
                     <LoginForm loginUser={this.loginUser.bind(this)} user={this.state.user}/>
                     :
-                    <Main games={this.state.games} /> }
-                />
+                    <Main
+                        games={ this.state.games}
+                        vinilClick={this.vinilDelete.bind(this)}
+                        stateAdmin={this.state.admin}
 
-
-
+                    />}
+            />
             <Route
                 path="/registration"
                 component={()=>  this.state.userLoged ===false
                     ?
                     <RegistrationForm registerUser={this.registerUser.bind(this)} user={this.state.user}/>
-                :
-                    <Main games={this.state.games} />
+                    :
+                    <Main games={this.state.games}
+                          vinilClick={this.vinilDelete.bind(this)}
+                          stateAdmin={this.state.admin}
+
+                    />
                 }
             />
 
             <Route
-            path="/admin"
-            exact component= {()=> <CreateRecord createRecord={this.createRecord.bind(this)}/>}
+                path="/"
+                component={()=>
+                    <Main games={this.state.games}
+                    vinilClick={this.vinilDelete.bind(this)}
+                    stateAdmin={this.state.admin}
+                    />}
             />
 
-            <Route path="/" component={()=> <Main games={this.state.games} />}/>
-            </Switch>
 
-                <Footer/>
-
+            <Footer/>
 
         </div>
 
 
-
-
     );
-
 
   }
 }

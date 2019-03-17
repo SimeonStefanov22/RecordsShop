@@ -1,9 +1,6 @@
 header{
     background: rgb(200, 177, 140);
-}
-
-header{
-   display: flex;
+    display: flex;
     justify-content: space-between;
 
 }

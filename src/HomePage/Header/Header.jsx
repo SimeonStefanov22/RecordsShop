@@ -7,6 +7,7 @@ class Header extends Component{
     }
 
     render() {
+
         return(
 
 
@@ -18,6 +19,7 @@ class Header extends Component{
                     <img src="https://alba-books.com/catalog/view/theme/default/stylesheet/images/cart.png"></img>
                     <span id="cartTotal">0 product(s)- 0.00 lv</span>
                 </div>
+
             </header>
 
         )

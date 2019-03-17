@@ -9,7 +9,8 @@ class CreateRecord extends Component{
             title: null,
             description: null,
             imageUrl: null,
-            price: null
+            price: null,
+            id: null
         }
         this.handleChange = this.handleChange.bind(this);
     }
@@ -21,12 +22,13 @@ class CreateRecord extends Component{
     render() {
         return(
             <div className="createForm">
-                <h1>Create game</h1>
+                <h1>Create record</h1>
                 <form onSubmit={(event) => {
                     event.preventDefault();
                     this.props.createRecord(this.state);
 
                 }}>
+
                     <label>Title</label>
                     <br/>
                     <input type="text" onChange={this.handleChange} name="title" id="title"/>
