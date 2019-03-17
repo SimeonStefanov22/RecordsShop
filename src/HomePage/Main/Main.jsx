@@ -9,19 +9,22 @@ class Main extends Component{
     constructor(props){
         super(props)
 
-
-
     }
 
 
     createRecordInMain = () => {
 
 
+
         let recordsArr = this.props.games;
 
         let records =  recordsArr.map(obj => {
+
+
             return (
-                <div key={obj._id} className="imageVinil">
+
+
+                <div key={obj._id} className="imageVinil" onClick={this.props.vinilClick}>
                     <div className="image">
                         <img src={obj.imageUrl}></img>
 

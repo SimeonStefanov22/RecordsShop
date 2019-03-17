@@ -91,9 +91,11 @@ class App extends Component {
   }
 
     logoutUser () {
-        localStorage.clear();
+
+      localStorage.clear();
         this.setState({
-           userLoged: false
+           userLoged: false,
+            admin: false
        })
     }
 
@@ -153,25 +155,34 @@ componentDidMount() {
       }
   }
 
+  vinilClick (event){
+      let valueEvent = event.currentTarget.dataset.id;
+      console.log(valueEvent);
+      this.setState({
+          selectedVinil: event.currentTarget.dataset.id
+      })
+
+
+  }
+
+
     vinilDelete () {
 
-      //this.setState({
-            //    selectedVinil: event.currentTarget.dataset.id
-            //})
-        console.log("Deleted!!!")
+      if(this.state.admin === true){
 
-        fetch('http://localhost:9999/feed/games/delete/'  ,{
-            method: "DELETE",
-            headers: {
-                'Content-Type': 'application/json'
-            }
 
-        }).then(response => {
-            console.log(response)
+          fetch('http://localhost:9999/feed/games'   ,{
+              method: "DELETE",
+              headers: {
+                  'Content-Type': 'application/json'
+              }
+          }).then(response => {
+              console.log(response)
+          })
 
-        })
+      }
 
-   }
+  }
 
 
 
@@ -211,9 +222,8 @@ componentDidMount() {
                     :
                     <Main
                         games={ this.state.games}
-                        vinilClick={this.vinilDelete.bind(this)}
+                        vinilClick={this.vinilClick.bind(this)}
                         stateAdmin={this.state.admin}
-
                     />}
             />
             <Route
@@ -223,7 +233,7 @@ componentDidMount() {
                     <RegistrationForm registerUser={this.registerUser.bind(this)} user={this.state.user}/>
                     :
                     <Main games={this.state.games}
-                          vinilClick={this.vinilDelete.bind(this)}
+                          vinilClick={this.vinilClick.bind(this)}
                           stateAdmin={this.state.admin}
 
                     />
@@ -234,7 +244,7 @@ componentDidMount() {
                 path="/"
                 component={()=>
                     <Main games={this.state.games}
-                    vinilClick={this.vinilDelete.bind(this)}
+                    vinilClick={this.vinilClick.bind(this)}
                     stateAdmin={this.state.admin}
                     />}
             />
