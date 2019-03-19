@@ -61,11 +61,11 @@ module.exports = {
 
     updateRecord: (req, res, next) => {
         const id = req.params.id;
-        //console.log('controller'+ id);
-        Record.findById(id)
+        const data = req.body;
+        Record.findById(req.params.id)
             .then((record) => {
 
-                Record.create(record)
+                Record.updateOne({_id: id}, { $set: data})
                     .then((game) => {
                         res.status(200)
                             .json({

@@ -23,7 +23,8 @@ class App extends Component {
         message: "",
         userLoged: false,
         admin: false,
-        selectedVinil: null
+        selectedVinil: null,
+
 
       }
       this.vinilDelete = this.vinilDelete.bind(this);
@@ -124,23 +125,24 @@ class App extends Component {
             })
     }
 
-    updateClick(event){
-        let id = event.currentTarget.dataset.id;
-        console.log(id);
-        return id;
+    updateClick(id){
+        this.setState({
+            selectedVinil: id
+        })
     }
 
     updateRecord(data) {
-      let id = this.updateClick()
-        //console.log(data);
+        console.log(data);
+        let id = this.state.selectedVinil;
         fetch('http://localhost:9999/feed/games/' + id,{
-            method: 'UPDATE',
+            method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(data)
         }).then(response => response.json())
             .then(body => {
+                console.log('thenva');
                 if(body.errors){
                     body.errors.forEach(error =>{
                         console.log(error)
@@ -148,12 +150,9 @@ class App extends Component {
                 }else{
                     //Record added successfully
                     this.fetchRecords();
-
-
                 }
             })
     }
-
 
 
 fetchRecords () {

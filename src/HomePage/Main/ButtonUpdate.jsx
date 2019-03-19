@@ -18,11 +18,13 @@ class ButtonUpdate extends Component{
 
         return(
 
-                <Link to="/admin/update"
-                      className='buttonUpdate'
-                      data-id={this.props.dataId}
-                onClick={this.props.updateClick}
-                >Update Record</Link>
+            <Link to="/admin/update"
+                  className='buttonUpdate'
+                  data-id={this.props.dataId}
+                  onClick={() => this.props.updateClick(this.props.dataId)}
+            >
+                Update Record
+            </Link>
 
 
         )

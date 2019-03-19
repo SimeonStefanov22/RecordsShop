@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79a58df4-fc07-4a68-8562-9c7f5a19da0f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/HomePage/Main/ButtonUpdate.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HomePage/Main/buttonUpdate.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/feed.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/feed.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/routes/feed.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/feed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AdminForms/UpdateRecord.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdminForms/UpdateRecord.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AfdminNavigation/AdminNavigation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AfdminNavigation/AdminNavigation.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomePage/Main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePage/Main/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomePage/Main/ButtonUpdate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePage/Main/ButtonUpdate.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2267">
-              <caret line="254" column="63" lean-forward="true" selection-start-line="254" selection-start-column="63" selection-end-line="254" selection-end-column="63" />
+            <state relative-caret-position="336">
+              <caret line="151" column="40" lean-forward="true" selection-start-line="151" selection-start-column="40" selection-end-line="151" selection-end-column="40" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -38,7 +34,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Forms/LoginForm.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
+            <state relative-caret-position="74">
               <caret line="32" column="95" selection-start-line="32" selection-start-column="95" selection-end-line="32" selection-end-column="95" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -50,7 +46,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AdminForms/UpdateRecord.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="204">
               <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -72,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/server/routes/feed.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+              <caret line="7" column="54" lean-forward="true" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -81,7 +77,7 @@
         <entry file="file://$PROJECT_DIR$/src/HomePage/Main/ButtonUpdate.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+              <caret line="23" column="75" lean-forward="true" selection-start-line="23" selection-start-column="75" selection-end-line="23" selection-end-column="75" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -92,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/controllers/feed.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="81" column="23" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
+            <state relative-caret-position="-28">
+              <caret line="63" column="29" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -151,14 +147,14 @@
         <option value="$PROJECT_DIR$/src/HomePage/Header/navigation.jsx" />
         <option value="$PROJECT_DIR$/src/AdminForms/CreateRecord.jsx" />
         <option value="$PROJECT_DIR$/src/HomePage/Main/ButtonDel.jsx" />
-        <option value="$PROJECT_DIR$/server/controllers/feed.js" />
-        <option value="$PROJECT_DIR$/server/routes/feed.js" />
         <option value="$PROJECT_DIR$/src/AfdminNavigation/AdminNavigation.jsx" />
         <option value="$PROJECT_DIR$/src/HomePage/Main/buttonUpdate.css" />
-        <option value="$PROJECT_DIR$/src/HomePage/Main/ButtonUpdate.jsx" />
         <option value="$PROJECT_DIR$/src/HomePage/Main/Main.jsx" />
         <option value="$PROJECT_DIR$/src/AdminForms/UpdateRecord.jsx" />
+        <option value="$PROJECT_DIR$/server/routes/feed.js" />
+        <option value="$PROJECT_DIR$/src/HomePage/Main/ButtonUpdate.jsx" />
         <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/server/controllers/feed.js" />
       </list>
     </option>
   </component>
@@ -281,18 +277,18 @@
       <workItem from="1552645861780" duration="31378000" />
       <workItem from="1552735543723" duration="33775000" />
       <workItem from="1552838557984" duration="19706000" />
-      <workItem from="1552916223023" duration="36297000" />
+      <workItem from="1552916223023" duration="45871000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="185298000" />
+    <option name="totallyTimeSpent" value="194872000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27901787" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27901787" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -305,7 +301,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2667758" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2667758" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -493,13 +489,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HomePage/Main/ButtonDel.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="95" lean-forward="true" selection-start-line="16" selection-start-column="95" selection-end-line="16" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/HomePage/Main/buttonUpdate.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -509,7 +498,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Forms/LoginForm.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
+        <state relative-caret-position="74">
           <caret line="32" column="95" selection-start-line="32" selection-start-column="95" selection-end-line="32" selection-end-column="95" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
@@ -517,23 +506,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/controllers/feed.js">
+    <entry file="file://$PROJECT_DIR$/src/HomePage/Main/ButtonDel.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="81" column="23" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/routes/feed.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        <state relative-caret-position="272">
+          <caret line="16" column="95" lean-forward="true" selection-start-line="16" selection-start-column="95" selection-end-line="16" selection-end-column="95" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AdminForms/UpdateRecord.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="204">
           <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
@@ -541,10 +523,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/feed.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="54" lean-forward="true" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/HomePage/Main/ButtonUpdate.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+          <caret line="23" column="75" lean-forward="true" selection-start-line="23" selection-start-column="75" selection-end-line="23" selection-end-column="75" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -561,10 +550,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/feed.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28">
+          <caret line="63" column="29" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2267">
-          <caret line="254" column="63" lean-forward="true" selection-start-line="254" selection-start-column="63" selection-end-line="254" selection-end-column="63" />
+        <state relative-caret-position="336">
+          <caret line="151" column="40" lean-forward="true" selection-start-line="151" selection-start-column="40" selection-end-line="151" selection-end-column="40" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>

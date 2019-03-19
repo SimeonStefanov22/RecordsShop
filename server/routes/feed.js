@@ -5,7 +5,7 @@ const isAuth = require('../middleware/is-auth');
 router.get('/games', feedController.getRecords);
 router.post('/game/create', feedController.createRecord);
 router.delete('/games/:id', feedController.deleteRecord);
-router.update('/games/:id', feedController.updateRecord);
+router.put('/games/:id', feedController.updateRecord);
 
 
 module.exports = router;
