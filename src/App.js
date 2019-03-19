@@ -25,6 +25,7 @@ class App extends Component {
         selectedVinil: null
 
       }
+      this.vinilDelete = this.vinilDelete.bind(this);
 
   }
 
@@ -155,34 +156,28 @@ componentDidMount() {
       }
   }
 
-  vinilClick (event){
-      let valueEvent = event.currentTarget.dataset.id;
-      console.log(valueEvent);
-      this.setState({
-          selectedVinil: event.currentTarget.dataset.id
-      })
-
-
+    vinilClick (event){
+        let valueEvent = event.currentTarget.dataset.id;
+        this.vinilDelete(valueEvent);
   }
 
 
-    vinilDelete () {
+    vinilDelete (id) {
+        if(this.state.admin === true){
 
-      if(this.state.admin === true){
+            fetch('http://localhost:9999/feed/games/' + id  ,{
+                method: "DELETE",
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            }).then(response => {
+                console.log(response);
+                this.fetchRecords();
+            })
 
+        }
 
-          fetch('http://localhost:9999/feed/games'   ,{
-              method: "DELETE",
-              headers: {
-                  'Content-Type': 'application/json'
-              }
-          }).then(response => {
-              console.log(response)
-          })
-
-      }
-
-  }
+    }
 
 
 
@@ -235,7 +230,6 @@ componentDidMount() {
                     <Main games={this.state.games}
                           vinilClick={this.vinilClick.bind(this)}
                           stateAdmin={this.state.admin}
-
                     />
                 }
             />

@@ -12,8 +12,9 @@ class ButtonDelete extends Component{
     render() {
 
 
-            return(
-                <button>Delete</button>
+
+        return(
+            <button data-id={this.props.dataId} onClick={this.props.vinilClick}>Delete</button>
             )
 
     }

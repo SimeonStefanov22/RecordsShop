@@ -38,7 +38,7 @@ module.exports = {
 
     deleteRecord: (req, res, next) => {
         const id = req.params.id;
-        console.log(id);
+        //console.log('controller'+ id);
         Record.findById(id)
             .then((record) => {
                 record

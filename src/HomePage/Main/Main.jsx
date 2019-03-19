@@ -2,12 +2,13 @@ import React, {Component} from 'react';
 import './main.css';
 import ButtonBuy from './ButtonBuy';
 import ButtonDelete from './ButtonDel';
-import {Route} from "react-router-dom";
+import {Route, Router} from "react-router-dom";
 
 
 class Main extends Component{
     constructor(props){
         super(props)
+
 
     }
 
@@ -24,24 +25,31 @@ class Main extends Component{
             return (
 
 
-                <div key={obj._id} className="imageVinil" onClick={this.props.vinilClick}>
+                <div key={obj._id} className="imageVinil">
                     <div className="image">
                         <img src={obj.imageUrl}></img>
 
                     </div>
 
-                    <div className="info">
-                        <p>{obj.title}</p>
-                        <p>{obj.description}</p>
-                        <p>Price: ${obj.price}</p>
-                        <ButtonBuy/>
-                    </div>
+                    <Route
+                    path="/login"
+                    component={()=>
+                        <div className="info">
+                            <p>{obj.title}</p>
+                            <p>{obj.description}</p>
+                            <p>Price: ${obj.price}</p>
+                            <ButtonBuy/>
+                        </div>
+                    }
+                    />
+
+
 
                     <Route
                     path="/login"
                     component={()=> this.props.stateAdmin === true
                         ?
-                        <ButtonDelete dataId={obj._id} onClick={this.props.vinilClick}/>
+                        <ButtonDelete dataId={obj._id} vinilClick={this.props.vinilClick} />
                         :
                         null
                     }
@@ -54,7 +62,7 @@ class Main extends Component{
 
 
     render() {
-        //console.log(this.props.games);
+
 
         return(
 
