@@ -21,11 +21,11 @@ class UpdateRecord extends Component{
 
     render() {
         return(
-            <div className="updateForm">
+            <div className="createForm">
                 <h1>Update record</h1>
                 <form onSubmit={(event) => {
                     event.preventDefault();
-                    this.props.createRecord(this.state);
+                    this.props.updateRecord(this.state);
 
                 }}>
 
@@ -45,7 +45,7 @@ class UpdateRecord extends Component{
                     <br/>
                     <input type="text" onChange={this.handleChange} name="price" id="priceId"/>
                     <br/>
-                    <input type="submit" value="Create"/>
+                    <input type="submit" value="Update"/>
                 </form>
             </div>
         )

@@ -7,6 +7,7 @@ import Footer from './HomePage/Footer/Footer';
 import RegistrationForm from './Forms/RegistrationForm';
 import LoginForm from "./Forms/LoginForm";
 import CreateRecord from "./AdminForms/CreateRecord";
+import UpdateRecord from "./AdminForms/UpdateRecord";
 import AdminNavigation from "./AfdminNavigation/AdminNavigation";
 
 
@@ -123,6 +124,36 @@ class App extends Component {
             })
     }
 
+    updateClick(event){
+        let id = event.currentTarget.dataset.id;
+        console.log(id);
+        return id;
+    }
+
+    updateRecord(data) {
+      let id = this.updateClick()
+        //console.log(data);
+        fetch('http://localhost:9999/feed/games/' + id,{
+            method: 'UPDATE',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        }).then(response => response.json())
+            .then(body => {
+                if(body.errors){
+                    body.errors.forEach(error =>{
+                        console.log(error)
+                    })
+                }else{
+                    //Record added successfully
+                    this.fetchRecords();
+
+
+                }
+            })
+    }
+
 
 
 fetchRecords () {
@@ -181,7 +212,6 @@ componentDidMount() {
 
 
 
-
   render() {
 
 
@@ -207,6 +237,11 @@ componentDidMount() {
                 component={()=> <CreateRecord createRecord={this.createRecord.bind(this)} />}
             />
 
+            <Route
+                exact path="/admin/update"
+            component={()=> <UpdateRecord updateRecord={this.updateRecord.bind(this)}/>}
+            />
+
 
 
             <Route
@@ -219,6 +254,8 @@ componentDidMount() {
                         games={ this.state.games}
                         vinilClick={this.vinilClick.bind(this)}
                         stateAdmin={this.state.admin}
+                        stateUser={this.state.userLoged}
+                        updateClick={this.updateClick.bind(this)}
                     />}
             />
             <Route
@@ -230,6 +267,8 @@ componentDidMount() {
                     <Main games={this.state.games}
                           vinilClick={this.vinilClick.bind(this)}
                           stateAdmin={this.state.admin}
+                          stateUser={this.state.userLoged}
+                          updateClick={this.updateClick.bind(this)}
                     />
                 }
             />
@@ -238,8 +277,10 @@ componentDidMount() {
                 path="/"
                 component={()=>
                     <Main games={this.state.games}
-                    vinilClick={this.vinilClick.bind(this)}
-                    stateAdmin={this.state.admin}
+                          vinilClick={this.vinilClick.bind(this)}
+                          stateAdmin={this.state.admin}
+                          stateUser={this.state.userLoged}
+                          updateClick={this.updateClick.bind(this)}
                     />}
             />
 

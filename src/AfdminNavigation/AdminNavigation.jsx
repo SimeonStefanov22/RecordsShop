@@ -13,7 +13,7 @@ class AdminNavigation extends Component{
             <nav className= "adminNav">
                 <ul>
                     <li><Link to="/admin/create">Create record</Link></li>
-                    <li><Link to="/admin/update">Update record</Link></li>
+
                     <li><Link to="/admin/delete/user">Delete user</Link></li>
 
                 </ul>

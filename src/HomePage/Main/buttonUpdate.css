@@ -1,0 +1,9 @@
+.buttonUpdate{
+    color:white;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.buttonUpdate:hover{
+    color: red;
+}

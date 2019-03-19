@@ -28,12 +28,12 @@ module.exports = {
                     })
             })
             .catch((error) => {
-                if (!error.statusCode) {
-                    error.statusCode = 500;
-                }
+            if (!error.statusCode) {
+                error.statusCode = 500;
+            }
 
-                next(error);
-            });
+            next(error);
+        });
     },
 
     deleteRecord: (req, res, next) => {
@@ -57,5 +57,39 @@ module.exports = {
                 })
             })
 
+    },
+
+    updateRecord: (req, res, next) => {
+        const id = req.params.id;
+        //console.log('controller'+ id);
+        Record.findById(id)
+            .then((record) => {
+
+                Record.create(record)
+                    .then((game) => {
+                        res.status(200)
+                            .json({
+                                message: 'Record updated successfully!',
+                                game
+                            })
+                    })
+                    .catch((error) => {
+                        if (!error.statusCode) {
+                            error.statusCode = 500;
+                        }
+
+                        next(error);
+                    });
+
+            })
+            .catch(() => {
+                return res.status(200).json({
+                    success: false,
+                    message: 'Entry does not exist!'
+                })
+            })
+
     }
+
+
 }

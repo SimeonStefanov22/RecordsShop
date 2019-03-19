@@ -2,18 +2,20 @@ import React, {Component} from 'react';
 import './main.css';
 import ButtonBuy from './ButtonBuy';
 import ButtonDelete from './ButtonDel';
-import {Route, Router} from "react-router-dom";
+import {Route} from "react-router-dom";
+import ButtonUpdate from "./ButtonUpdate";
 
 
 class Main extends Component{
     constructor(props){
         super(props)
 
-
     }
 
 
     createRecordInMain = () => {
+
+
 
 
 
@@ -33,14 +35,30 @@ class Main extends Component{
 
                     <Route
                     path="/login"
-                    component={()=>
+                    component={()=> this.props.stateUser=== true
+                        ?
                         <div className="info">
                             <p>{obj.title}</p>
                             <p>{obj.description}</p>
                             <p>Price: ${obj.price}</p>
                             <ButtonBuy/>
                         </div>
+                        :null
                     }
+                    />
+
+                    <Route
+                        path="/registration"
+                        component={()=> this.props.stateUser=== true
+                            ?
+                            <div className="info">
+                                <p>{obj.title}</p>
+                                <p>{obj.description}</p>
+                                <p>Price: ${obj.price}</p>
+                                <ButtonBuy/>
+                            </div>
+                            :null
+                        }
                     />
 
 
@@ -49,7 +67,11 @@ class Main extends Component{
                     path="/login"
                     component={()=> this.props.stateAdmin === true
                         ?
-                        <ButtonDelete dataId={obj._id} vinilClick={this.props.vinilClick} />
+                        <div>
+                            <ButtonDelete dataId={obj._id} vinilClick={this.props.vinilClick} />
+                            <ButtonUpdate dataId={obj._id} updateClick={this.props.updateClick}/>
+                        </div>
+
                         :
                         null
                     }
