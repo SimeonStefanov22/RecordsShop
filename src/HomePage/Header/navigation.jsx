@@ -13,6 +13,7 @@ class Navigation extends Component{
         return(
             <nav>
                 <ul>
+                    <li><Link to="/">Home</Link></li>
                     <li><Link to="/login">Login</Link></li>
                     <li><Link to="/registration">Register</Link></li>
                     <li><Link to="/logout" onClick={this.props.logout}>Logout</Link></li>

@@ -3,10 +3,28 @@
   <component name="ChangeListManager">
     <list default="true" id="79a58df4-fc07-4a68-8562-9c7f5a19da0f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/feed.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/feed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/feed.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/feed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AfdminNavigation/AdminNavigation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdminNavigation/AdminNavigation.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AfdminNavigation/adminNavigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdminNavigation/adminNavigation.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomePage/Main/ButtonUpdate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePage/Main/ButtonUpdate.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomePage/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePage/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomePage/Header/navigation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePage/Header/navigation.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomePage/Main/ButtonBuy.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Buttons/ButtonBuy.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomePage/Main/ButtonDel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Buttons/ButtonDel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomePage/Main/ButtonUpdate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Buttons/ButtonUpdate.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomePage/Main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePage/Main/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomePage/Main/buttonUpdate.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Buttons/buttonUpdate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomePage/Main/buuonBay.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Buttons/buuonBay.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vynils/Blues BB King.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vynils/Blues Cash.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vynils/Blues Miles Davis.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vynils/Blues Misisipi.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vynils/Blues brothers.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vynils/Rock'n'roll 2.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vynils/Rock'n'roll 3.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vynils/Rock'n'roll Beathles.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vynils/Rock'n'roll Elvis.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vynils/Rock'n'roll.tif" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,11 +37,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="151" column="40" lean-forward="true" selection-start-line="151" selection-start-column="40" selection-end-line="151" selection-end-column="40" />
+            <state relative-caret-position="119">
+              <caret line="220" column="51" selection-start-line="220" selection-start-column="51" selection-end-line="220" selection-end-column="51" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -32,10 +50,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Forms/LoginForm.jsx">
+        <entry file="file://$PROJECT_DIR$/src/HomePage/Header/Header.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="32" column="95" selection-start-line="32" selection-start-column="95" selection-end-line="32" selection-end-column="95" />
+            <state relative-caret-position="221">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor>
+                <caret column="31" selection-start-column="31" selection-end-column="31" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/HomePage/Header/navigation.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -46,7 +88,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AdminForms/UpdateRecord.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="442">
               <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -56,7 +98,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/HomePage/Main/ButtonDel.jsx">
+        <entry file="file://$PROJECT_DIR$/src/Buttons/ButtonDel.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
               <caret line="16" column="95" lean-forward="true" selection-start-line="16" selection-start-column="95" selection-end-line="16" selection-end-column="95" />
@@ -74,9 +116,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/HomePage/Main/ButtonUpdate.jsx">
+        <entry file="file://$PROJECT_DIR$/src/Buttons/ButtonUpdate.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="357">
               <caret line="23" column="75" lean-forward="true" selection-start-line="23" selection-start-column="75" selection-end-line="23" selection-end-column="75" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -88,8 +130,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/controllers/feed.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-28">
-              <caret line="63" column="29" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
+            <state relative-caret-position="1139">
+              <caret line="67" column="58" selection-start-line="67" selection-start-column="58" selection-end-line="67" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -97,8 +139,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HomePage/Main/Main.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="71" column="97" lean-forward="true" selection-start-line="71" selection-start-column="97" selection-end-line="71" selection-end-column="97" />
+            <state relative-caret-position="1122">
+              <caret line="71" column="97" selection-start-line="71" selection-start-column="97" selection-end-line="71" selection-end-column="97" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -115,6 +157,14 @@
         <option value="CSS File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\React-SoftUni\test-react-app\ExamReact\vynils</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -133,7 +183,6 @@
         <option value="$PROJECT_DIR$/src/HomePage/Header/navigation.css" />
         <option value="$PROJECT_DIR$/src/HomePage/Forms/loginForm.css" />
         <option value="$PROJECT_DIR$/src/HomePage/Header/header.css" />
-        <option value="$PROJECT_DIR$/src/HomePage/Header/Header.jsx" />
         <option value="$PROJECT_DIR$/src/HomePage/WelcomeUser/WelcomeUser.jsx" />
         <option value="$PROJECT_DIR$/src/HomePage/Main/ButtonBuy.jsx" />
         <option value="$PROJECT_DIR$/src/HomePage/Main/buuonBay.css" />
@@ -144,7 +193,6 @@
         <option value="$PROJECT_DIR$/server/models/Record.js" />
         <option value="$PROJECT_DIR$/src/HomePage/Main/ButtonDelete.jsx" />
         <option value="$PROJECT_DIR$/src/AfdminNavigation/adminNavigation.css" />
-        <option value="$PROJECT_DIR$/src/HomePage/Header/navigation.jsx" />
         <option value="$PROJECT_DIR$/src/AdminForms/CreateRecord.jsx" />
         <option value="$PROJECT_DIR$/src/HomePage/Main/ButtonDel.jsx" />
         <option value="$PROJECT_DIR$/src/AfdminNavigation/AdminNavigation.jsx" />
@@ -153,8 +201,11 @@
         <option value="$PROJECT_DIR$/src/AdminForms/UpdateRecord.jsx" />
         <option value="$PROJECT_DIR$/server/routes/feed.js" />
         <option value="$PROJECT_DIR$/src/HomePage/Main/ButtonUpdate.jsx" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/server/controllers/feed.js" />
+        <option value="$PROJECT_DIR$/src/HomePage/Header/navigation.jsx" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/HomePage/Header/Header.jsx" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -176,7 +227,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -187,31 +237,7 @@
             <path>
               <item name="ExamReact" type="b2602c69:ProjectViewProjectNode" />
               <item name="ExamReact" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ExamReact" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExamReact" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ExamReact" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExamReact" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ExamReact" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExamReact" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="HomePage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ExamReact" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExamReact" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="HomePage" type="462c0819:PsiDirectoryNode" />
-              <item name="Main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ExamReact" type="b2602c69:ProjectViewProjectNode" />
@@ -226,6 +252,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -242,6 +269,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\React-SoftUni\test-react-app\ExamReact\src\Buttons" />
       <recent name="D:\React-SoftUni\test-react-app\ExamReact\src\AdminForms" />
       <recent name="D:\React-SoftUni\test-react-app\ExamReact\src\Forms" />
       <recent name="D:\React-SoftUni\test-react-app\ExamReact\src" />
@@ -277,18 +305,19 @@
       <workItem from="1552645861780" duration="31378000" />
       <workItem from="1552735543723" duration="33775000" />
       <workItem from="1552838557984" duration="19706000" />
-      <workItem from="1552916223023" duration="45871000" />
+      <workItem from="1552916223023" duration="52209000" />
+      <workItem from="1553100605974" duration="3510000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194872000" />
+    <option name="totallyTimeSpent" value="204720000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27901787" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31547618" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -301,7 +330,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2667758" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2667758" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -355,16 +384,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HomePage/Header/Header.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/HomePage/Main/RecordAndDescription.jsx" />
     <entry file="file://$PROJECT_DIR$/src/Forms/RegistrationForm.jsx">
       <provider selected="true" editor-type-id="text-editor">
@@ -378,20 +397,10 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.jspx" />
     <entry file="file://$PROJECT_DIR$/src/HomePage/Main/ButtonDelete.jsx" />
-    <entry file="file://$PROJECT_DIR$/src/HomePage/Main/ButtonBuy.jsx">
+    <entry file="file://$PROJECT_DIR$/src/Buttons/ButtonBuy.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HomePage/Header/navigation.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="89" lean-forward="true" selection-start-line="17" selection-start-column="89" selection-end-line="17" selection-end-column="89" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -451,7 +460,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AfdminNavigation/AdminNavigation.jsx">
+    <entry file="file://$PROJECT_DIR$/src/AdminNavigation/AdminNavigation.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="14" column="41" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="74" />
@@ -475,21 +484,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HomePage/Main/buuonBay.css">
+    <entry file="file://$PROJECT_DIR$/src/Buttons/buuonBay.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AfdminNavigation/adminNavigation.css">
+    <entry file="file://$PROJECT_DIR$/src/AdminNavigation/adminNavigation.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HomePage/Main/buttonUpdate.css">
+    <entry file="file://$PROJECT_DIR$/src/Buttons/buttonUpdate.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
@@ -506,20 +515,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HomePage/Main/ButtonDel.jsx">
+    <entry file="file://$PROJECT_DIR$/src/HomePage/Header/navigation.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="95" lean-forward="true" selection-start-line="16" selection-start-column="95" selection-end-line="16" selection-end-column="95" />
+        <state relative-caret-position="221">
+          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AdminForms/UpdateRecord.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="442">
           <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Buttons/ButtonDel.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="95" lean-forward="true" selection-start-line="16" selection-start-column="95" selection-end-line="16" selection-end-column="95" />
         </state>
       </provider>
     </entry>
@@ -530,20 +549,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HomePage/Main/ButtonUpdate.jsx">
+    <entry file="file://$PROJECT_DIR$/src/Buttons/ButtonUpdate.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="357">
           <caret line="23" column="75" lean-forward="true" selection-start-line="23" selection-start-column="75" selection-end-line="23" selection-end-column="75" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HomePage/Main/Main.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="71" column="97" lean-forward="true" selection-start-line="71" selection-start-column="97" selection-end-line="71" selection-end-column="97" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -552,18 +561,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/controllers/feed.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
-          <caret line="63" column="29" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
+        <state relative-caret-position="1139">
+          <caret line="67" column="58" selection-start-line="67" selection-start-column="58" selection-end-line="67" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HomePage/Main/Main.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="71" column="97" selection-start-line="71" selection-start-column="97" selection-end-line="71" selection-end-column="97" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="151" column="40" lean-forward="true" selection-start-line="151" selection-start-column="40" selection-end-line="151" selection-end-column="40" />
+        <state relative-caret-position="119">
+          <caret line="220" column="51" selection-start-line="220" selection-start-column="51" selection-end-line="220" selection-end-column="51" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HomePage/Header/Header.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="31" selection-start-column="31" selection-end-column="31" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

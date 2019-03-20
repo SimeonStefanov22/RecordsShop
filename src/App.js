@@ -8,7 +8,7 @@ import RegistrationForm from './Forms/RegistrationForm';
 import LoginForm from "./Forms/LoginForm";
 import CreateRecord from "./AdminForms/CreateRecord";
 import UpdateRecord from "./AdminForms/UpdateRecord";
-import AdminNavigation from "./AfdminNavigation/AdminNavigation";
+import AdminNavigation from "./AdminNavigation/AdminNavigation";
 
 
 class App extends Component {
@@ -218,7 +218,7 @@ componentDidMount() {
 
         <div>
 
-            <Header />
+            <Header userLoged={this.state.userLoged}/>
             <Navigation logout={this.logoutUser.bind(this)}/>
 
             <Route
@@ -249,13 +249,7 @@ componentDidMount() {
                     ?
                     <LoginForm loginUser={this.loginUser.bind(this)} user={this.state.user}/>
                     :
-                    <Main
-                        games={ this.state.games}
-                        vinilClick={this.vinilClick.bind(this)}
-                        stateAdmin={this.state.admin}
-                        stateUser={this.state.userLoged}
-                        updateClick={this.updateClick.bind(this)}
-                    />}
+                 null}
             />
             <Route
                 path="/registration"
@@ -263,12 +257,7 @@ componentDidMount() {
                     ?
                     <RegistrationForm registerUser={this.registerUser.bind(this)} user={this.state.user}/>
                     :
-                    <Main games={this.state.games}
-                          vinilClick={this.vinilClick.bind(this)}
-                          stateAdmin={this.state.admin}
-                          stateUser={this.state.userLoged}
-                          updateClick={this.updateClick.bind(this)}
-                    />
+                  null
                 }
             />
 

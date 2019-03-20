@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import './main.css';
-import ButtonBuy from './ButtonBuy';
-import ButtonDelete from './ButtonDel';
+import ButtonBuy from '../../Buttons/ButtonBuy';
+import ButtonDelete from '../../Buttons/ButtonDel';
 import {Route} from "react-router-dom";
-import ButtonUpdate from "./ButtonUpdate";
+import ButtonUpdate from "../../Buttons/ButtonUpdate";
 
 
 class Main extends Component{
